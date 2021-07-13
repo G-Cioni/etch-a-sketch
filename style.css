@@ -4,7 +4,7 @@ body {
     grid-template-columns: 1fr .1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
     grid-auto-flow: ;
-    grid-template-areas: ". . . "
+    grid-template-areas: ". button . "
                          ". container ."
                          ". . .";
 }
@@ -20,8 +20,13 @@ body {
 }
 
 
-div:hover {
-    background-color: red;
+
+#div1 {
+
 }
 
-
+button {
+    grid-area: button;
+    max-height: 30px;
+    max-width: 80px;
+}
