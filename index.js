@@ -1,7 +1,7 @@
 // Prompt user for desired grid size until valid input is inserted
 let gridSize
 while (gridSize > 100 || gridSize < 4 || gridSize == undefined) {
- gridSize = window.prompt("please insert desired grid size (range 4 =>100): E.g. 16 = 16 * 16")
+ gridSize = window.prompt("Please insert desired grid size (range 4 => 100): E.g. 16 = 16 * 16")
  // break if user clicks "cancel"
  if (gridSize == null) {
      break;
