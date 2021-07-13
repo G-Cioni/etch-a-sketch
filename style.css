@@ -1,88 +1,27 @@
 body {
     background-color: rgb(31, 30, 30);
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr .1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-auto-flow: ;
+    grid-template-areas: ". . . "
+                         ". container ."
+                         ". . .";
 }
 
 
 
 #container {
+    grid-area: container;
     background-color: rgb(54, 54, 54);
-    width: 960px;
-    height: 960px;
+    width: 550px;
+    height: 550px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "div-1 div-2 div-3 div-4"
-                         "div-5 div-6 div-7 div-8"
-                         "div-9 div-10 div-11 div-12"
-                         "div-13 div-14 div-15 div-16";
 }
 
 
 div:hover {
     background-color: red;
 }
-#div-1 {
-    grid-area: div-1;
-}
 
-#div-2 {
-    grid-area: div-2;
-}
-
-#div-3 {
-    grid-area: div-3;
-}
-
-#div-4 {
-    grid-area: div-4;
-}
-
-#div-5 {
-    grid-area: div-5;
-}
-
-#div-6 {
-    grid-area: div-6;
-}
-
-#div-7 {
-    grid-area: div-7;
-}
-
-#div-8 {
-    grid-area: div-8;
-}
-
-#div-9 {
-    grid-area: div-9;
-}
-
-#div-10 {
-    grid-area: div-10;
-}
-
-#div-11 {
-    grid-area: div-11;
-}
-
-#div-12 {
-    grid-area: div-12;
-}
-
-#div-13 {
-    grid-area: div-13;
-}
-
-#div-14 {
-    grid-area: div-14;
-}
-
-#div-15 {
-    grid-area: div-15;
-}
-
-#div-16 {
-    grid-area: div-16;
-}
 
